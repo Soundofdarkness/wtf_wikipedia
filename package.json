@@ -10,12 +10,12 @@
   "exports": {
     ".": {
       "import": {
-        "default": "./src/index.js",
-        "types": "./types/index.d.mts"
+        "types": "./types/index.d.mts",
+        "default": "./src/index.js"
       },
       "require": {
-        "default": "./builds/wtf_wikipedia.cjs",
-        "types": "./types/index.d.ts"
+        "types": "./types/index.d.cts",
+        "default": "./builds/wtf_wikipedia.cjs"
       }
     }
   },
@@ -27,7 +27,7 @@
   "man": [
     "./builds/man/wtf_wikipedia.1"
   ],
-  "types": "types/index.d.ts",
+  "types": "types/index.d.mts",
   "scripts": {
     "build": "node ./scripts/version.js && rollup -c",
     "build:all": "node ./scripts/buildAll.js",
