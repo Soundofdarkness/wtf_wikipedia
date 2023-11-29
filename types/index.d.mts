@@ -183,8 +183,6 @@ declare class Sentence {
   wikitext(): string
 }
 
-export = wtf
-
 type fetchDefaults = {
   path?: string | undefined;
   wiki?: string | undefined;
@@ -229,3 +227,5 @@ declare function extend(fn: Function): {
   plugin: typeof extend
   version: string
 }
+
+export default wtf;
